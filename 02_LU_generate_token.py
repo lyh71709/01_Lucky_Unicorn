@@ -15,24 +15,9 @@ import random
 HOW_MUCH = 100
 tokens = ["Horse", "Zebra", "Donkey", "Unicorn"]
 
-unicorn_count = 0
-zebra_horse_count = 0
-donkey_count = 0
-
 for item in range(0,HOW_MUCH):
 
     chosen = random.choice(tokens)
 
-    if chosen == "Unicorn":
-        unicorn_count += 1
-    elif chosen == "Donkey":
-        donkey_count += 1
-    else:
-        zebra_horse_count += 1
-
     print(chosen)
 
-print("***** Win / Loss Calculations *****")
-print("# Unicorns: {}".format(unicorn_count))
-print("# Zebras / Horses: {}".format(zebra_horse_count))
-print("# Donkeys: {}".format(donkey_count))
