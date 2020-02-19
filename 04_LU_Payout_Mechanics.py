@@ -1,4 +1,4 @@
-# Lucky Unicorn - payment mechanics
+# Lucky Unicorn - Payout Mechanics
 
 # To do
 # Assume starting amount is $10

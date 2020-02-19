@@ -1,5 +1,5 @@
-# Lucky Unicorn Decomposition Step 1
-# Get initial amount and check that it's valid
+# Lucky Unicorn Fully Working Program
+# Program should work - needs to be tested for usability
 
 # Integer checking function
 def intcheck(question, low, high):
