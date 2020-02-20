@@ -1,5 +1,6 @@
 # Lucky Unicorn Fully Working Program
 # Program should work - needs to be tested for usability
+# Post usability, harder to get a unicorn
 
 import random
 
@@ -33,7 +34,7 @@ print()
 print("So input a certain amount of money to begin playing")
 print("Each round cost $1 to play and depending on the token is how much you won back")
 print("The four different tokens are worth different amounts of money")
-print("A Unicorn is worth $5, A Zebra is worth 50c, A Horse is worth 50c as well and A Donkey is worth nothing. ")
+print("A Unicorn is worth $5, a Zebra is worth 50c, a Horse is worth 50c as well and a Donkey is worth nothing. ")
 print()
 
 # Ask user how much they want to play with (min $1, max $10)
@@ -42,20 +43,28 @@ balance = intcheck("How much money do you want to play with(Must be between $1 a
 keep_going = ""
 while keep_going == "":
 
-    # Tokens lsit includes 10 items to prevent too many unicorns being chosen
-    token = ["Horse", "Horse", "Horse", "Zebra", "Zebra", "Zebra", "Donkey", "Donkey", "Donkey", "Unicorn"]
+    # generate a number between 1 and 100 to assign tokens...
+    token_number = random.randrange(1,100)
+
+    if token_number <= 10:
+        token="Unicorn"
+    elif 11 < token_number <= 25:
+        token = "Horse"
+    elif 26 < token_number <= 55:
+        token = "Zebra"
+    else:
+        token = "Donkey"
 
     # Randomly choose a token from our list above
-    chosen = random.choice(token)
     print()
-    print("You got a {}".format(chosen))
+    print("You got a {}".format(token))
 
 
     # Adjust total correctly for a given token
-    if chosen == "Unicorn":
+    if token == "Unicorn":
         balance += 5
         feedback = "Congratulations you won $5.00"
-    elif chosen == "Donkey":
+    elif token == "Donkey":
         balance -= 1
         feedback = "Sorry you didn't win anything this round"
     else:
