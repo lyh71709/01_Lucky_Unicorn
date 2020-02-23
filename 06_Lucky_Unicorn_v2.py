@@ -86,6 +86,7 @@ while keep_going == "":
         keep_going = input("Press <ENTER> to keep playing or any key to quit. ")
         print()
 
+
 # Goodbye to user when the game ends
 print()
 print("Thanks for playing!")
