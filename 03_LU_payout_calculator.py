@@ -1,5 +1,5 @@
 # Lucky Unicorn Decomposition Step 2
-# Generate a random token
+# Generate a random token and then pay accordingly
 
 # To do
 # Set up starting amount

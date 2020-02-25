@@ -8,7 +8,7 @@ def intcheck(question, low, high):
     valid = False
 
     while not valid:
-        error = "Whoops! Please enter an amount between ${} and ${}: ".format(low, high)
+        error = "Whoops! Remember it has to be a number and cannot be a decimal. Please enter an amount between ${} and ${}: ".format(low, high)
 
         try:
             response = int(input(question))
@@ -37,7 +37,7 @@ print("A Unicorn is worth $5, A Zebra is worth 50c, A Horse is worth 50c as well
 print()
 
 # Ask user how much they want to play with (min $1, max $10)
-balance = intcheck("How much money do you want to play with(Must be between $1 and $10)? $", 1, 10)
+balance = intcheck("How much money do you want to play with (Must be between $1 and $10)? $", 1, 10)
 
 keep_going = ""
 while keep_going == "":

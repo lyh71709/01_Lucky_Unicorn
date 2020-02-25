@@ -46,16 +46,17 @@ while keep_going == "":
     # generate a number between 1 and 100 to assign tokens...
     token_number = random.randrange(1,100)
 
-    if token_number <= 10:
+    if token_number <= 7:
         token="Unicorn"
-    elif 11 < token_number <= 25:
+    elif 8 < token_number <= 30:
         token = "Horse"
-    elif 26 < token_number <= 55:
+    elif 31 < token_number <= 55:
         token = "Zebra"
     else:
         token = "Donkey"
 
     # Randomly choose a token from our list above
+    print()
     print()
     print("You got a {}".format(token))
 
