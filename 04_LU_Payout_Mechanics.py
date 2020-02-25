@@ -17,7 +17,7 @@ total = 10
 token = input("Enter a token: ")
 
 # Adjust total correctly for a given token
-if token == "unicorn":
+if token == "Unicorn":
     total += 5
     feedback = "Congratulations you won $5.00"
 elif token == "Donkey":
