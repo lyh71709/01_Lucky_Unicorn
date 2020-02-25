@@ -58,7 +58,9 @@ while keep_going == "":
     # Randomly choose a token from our list above
     print()
     print()
+    print("-" * 20)
     print("You got a {}".format(token))
+    print("-" * 20)
 
 
     # Adjust total correctly for a given token
